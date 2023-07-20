@@ -4,9 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout Page</title>
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/5cb82b043a.js" crossorigin="anonymous"></script>
+
+    <!-- custom css  -->
     <link rel="stylesheet" href="./css/checkout.css">
 </head>
 <body>
-    <h1>Let's take this challenge!</h1>
+    <header></header>
+    <main>
+        <h1>Checkout</h1>
+        <section class="checkout">
+            <div class="checkout-form">
+                <h4>Contact infomation</h4>
+                <div class="input-field-container">
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Enter your email..." id="email">
+                <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="input-field-container">
+                <label for="phone">Phone</label>
+                <input type="phone" placeholder="Enter your phone..." id="phone">
+                <i class="fa-solid fa-phone"></i>
+                </div>
+                <h4>Shipping address</h4>
+                <div class="input-field-container">
+                    <label for="fname">Full name</label>
+                    <input type="text" placeholder="Your full name..." id="fname">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-field-container">
+                    <label for="address">Address</label>
+                    <input type="text" placeholder="Your address..." id="address">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <div class="input-field-container">
+                    <label for="city">City</label>
+                    <input type="text" placeholder="Your city..." id="city">
+                    <i class="fa-solid fa-city"></i>
+                </div>
+                <div id="two-input-fields" class="input-field-container">
+                    <div>
+                    <label for="postal-code">Country</label>
+                    <select name="country" id="country">
+                        <option value="" disabled selected hidden>Your Country</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="India">India</option>
+                    </select>
+                    </div>
+
+                    <div>
+                    <label for="postal-code">Postal code</label>
+                    <input type="text" placeholder="Your postal code..." id="postal-code">
+                    </div>
+                </div>
+                <div class="chekbox">
+                    <input type="checkbox">
+                    <span class="checkbox-text">Save this information for next time</span>
+                </div>
+                <button class="continue-btn">Continue</button>
+            </div>
+            <div class="shopping-cart">
+                <div class="products">
+                    <!-- product - 1  -->
+                   <div class="product-item">
+                     <div class="product-image-container">
+                        <img src="./images/photo1.png" alt="">
+                     </div>
+                     <div class="product-content">
+                        <div>
+                        <h3 class="product-title">Vintage Backbag</h3>
+                        <h3 class="product-price"> <span class="current-price">$54.99</span> <span class="previous-price">$94.99</span> </h3>
+                        </div>
+                        <div class="product-quantity">
+                            <button class="decrement-btn">-</button>
+                            <input type="number" value="1" class="quantity-input-field">
+                            <button class="increment-btn">+</button>
+                        </div>
+                     </div>
+                   </div>
+
+                   <!-- product - 2  -->
+                   <div class="product-item">
+                    <div class="product-image-container">
+                       <img src="./images/photo2.png" alt="">
+                    </div>
+                    <div class="product-content">
+                       <div>
+                        <h3 class="product-title">Levi Shoes</h3>
+                        <h3 class="product-price"> <span class="current-price">$74.99</span> <span class="previous-price">$124.99</span> </h3>
+                       </div>
+                       <div class="product-quantity">
+                           <button class="decrement-btn">-</button>
+                           <input type="number" value="1" class="quantity-input-field">
+                           <button class="increment-btn">+</button>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="shopping">
+                    <div class="shopping-calculation-container">
+                        <h3 class="shopping-text">Shipping</h3>
+                        <h4 class="shopping-price">$19</h4>
+                    </div>
+                    <div class="shopping-calculation-container">
+                        <h3 class="shopping-text">Total</h3>
+                        <h4 class="shopping-price">$148.98</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
 </body>
 </html>
